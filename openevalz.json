@@ -1,0 +1,45 @@
+{
+  "openevalz_version": 1,
+  "eval": {
+    "id": "stereoset",
+    "slug": "stereoset",
+    "title": "StereoSet: Measuring stereotypical bias in pretrained language models",
+    "group": "Safeguards",
+    "tags": [],
+    "source": "core"
+  },
+  "upstream": {
+    "repo": "https://github.com/UKGovernmentBEIS/inspect_evals",
+    "path": "src/inspect_evals/stereoset",
+    "inspect_ai": "0.3.260",
+    "eval_version": "3-A",
+    "dependency": ""
+  },
+  "execution": {
+    "class": "plain",
+    "cost_class": "medium",
+    "sandbox": null,
+    "requires_internet": false,
+    "fast": false,
+    "supports_k8s": false,
+    "environment": ""
+  },
+  "tasks": [
+    {
+      "name": "stereoset",
+      "samples": 4299
+    }
+  ],
+  "total_samples": 4299,
+  "external_assets": [
+    {
+      "type": "huggingface",
+      "source": "McGill-NLP/stereoset",
+      "state": "pinned"
+    }
+  ],
+  "scaffolds": [
+    "baseline"
+  ],
+  "generated": "2026-08-25"
+}
